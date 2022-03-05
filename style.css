@@ -1,0 +1,530 @@
+* {box-sizing: border-box;}
+
+a
+{
+    text-decoration: none;
+    color: white;
+}
+
+:root
+{
+    --groesse: 40px;
+}
+
+body
+{
+    font-family: 'Varela Round', sans-serif; 
+    line-height: 27px;   
+    font-weight: 300;
+    color: #707070;
+    font-size: 15px;
+    margin: 0;
+   
+}
+
+.container
+{
+    max-width: 1090px;
+    margin: 0 auto;
+}
+
+header .info
+{
+    background-color: #274ABB;
+    color: white;
+    padding: 10px 0;
+}
+
+header .info .container i, header .info .container a
+{
+    margin-right: 10px;
+}
+
+.header_section
+{
+	color: black;
+	padding: 35px 0;	
+	box-shadow: 0 0 10px 0 rgb(0 0 0 / 12%);
+    position: relative;
+    z-index: 99;    
+}
+
+.header_menu
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    height: 30px;
+}
+
+header section .container .imghome
+{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header section .container .imghome .logo 
+{
+	font-size: 30px;
+	font-weight: 400;
+    margin-right: 30px;	
+}
+
+header section .container .imghome .logo .logoImage
+{
+	width: 164px;
+}
+
+header section .container .imghome .menu
+{
+	display: flex;	
+}
+ 
+header section .container .imghome .menu a
+{
+	
+	color: #707070;	
+	font-weight: 400px;	
+	padding: 5px 15px;
+	margin-right: 10px;
+}
+
+header section .container .imghome .menu a:hover 
+{
+	background-color: #274abb;
+	color: white;
+	border-radius: 5px;
+}
+
+header section .container .imghome .menu a 
+{
+	display: block;
+	text-transform: uppercase;
+}
+
+header section .container .imghome .menu .active
+{
+	color: #274abb;
+	background-color: transparent;
+	border-radius: 5px;
+	border: 1px solid #274abb;
+}
+
+header section .container .imghome .menu .home
+{
+    background-color: transparent;
+	border-radius: 5px;
+	border: 1px solid #274abb;
+}
+
+header section .container .right a 
+{
+	color: #274abb;
+	border: 1px solid #274abb;
+	border-radius: 5px;
+	padding: 15px 20px;
+}
+
+header section .container .right a:hover
+{
+	background-color: #274abb;
+	color: white;
+	border-radius: 5px;
+}
+
+
+/*------------------BACK_IMAGE--------------------------------*/
+
+
+.back_image
+{
+    background-repeat: no-repeat;
+    background-image: url(https://kiper-immobilien.de/wp-content/uploads/2021/01/slider.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 600px;
+    padding: 50px;      
+}
+
+ .back_image h1
+{
+    font-size: 80px;
+    line-height: 50px;
+    font-weight: 900;    
+}
+
+ .back_image h3
+{
+    font-size: 40px;
+    font-weight: 800;   
+}
+
+.back_image h1, section .back_image h3
+{
+    position: relative;
+    top: 120px; 
+    z-index: 2;
+    text-align: center;
+    font-family: 'Lato', sans-serif;   
+    color: black;
+} 
+
+
+/*--------------------ARTÄ°CLE OFFER-----------------------*/
+
+.offerside
+{
+   display: flex; 
+   justify-content: space-between;
+   text-align: center;
+   padding: 20px 0;
+   margin-top: 50px; 
+}
+
+.offer
+{
+    display: flex;
+    flex-direction: column;   
+    align-items: center;     
+    width: 30%;
+}
+
+.offer i
+{
+    background-color: #274abb;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 13px;
+    color: white;
+    font-size: 50px;
+}
+
+.offer h2
+{
+    font-weight: normal;
+    margin: 20px 0 10px 0;
+}
+
+.offer p
+{
+    margin-top: 18px;
+}
+
+
+/*------------------------------ÃœBER UNS--------------------------*/
+
+
+.uberuns
+{
+    background-color: #f7f7f7;
+    position: relative;
+    margin-top: 130px;    
+    padding: 25px 25px; 
+}
+
+.uberuns_top
+{
+    top: calc(4% - (var(--groesse) * 2));
+    left: calc(47% - (var(--groesse) * 2));
+    position: absolute;
+    box-shadow: 0 0 10px 0 rgb(0 0 0 / 12%);    
+    text-align: center;
+    font-size: 28px;
+    background-color: white;
+    padding: 28px 50px;   
+    font-weight: 300; 
+}
+
+.uberuns .container .text
+{
+    text-align: center;
+    padding-top: 50px;
+    line-height: 27px;
+    font-size: 15px;   
+}
+
+.uberuns_italic
+{
+    color: #333333;
+    font-style: italic;
+    font-size: 18px;
+    padding-top: 0;
+    text-align: center;
+}
+
+
+/*--------------------ARTÄ°CLE MARKWERT------------------*/
+
+
+.marktwert
+{
+    background-color: #274abb;
+    display: flex;
+    text-align: center;
+    margin: 0 auto;
+    color: white;
+    justify-content: center;
+    padding: 30px 0;
+    position: relative;
+    font-size: 32px;
+    cursor: pointer;
+}
+
+/*------------------CARD----------------------*/
+
+
+.cards
+{
+    margin-bottom: 100px;
+}   
+
+.card_container
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.cards h1
+{
+    color: #333333;
+    margin: 80px 0 30px 0; 
+    font-size: 28px;
+    font-weight: 300;
+}
+
+.card
+{
+    width: 31%;
+    border-radius: 10px;
+    box-shadow: 1px 2px 15px 0 rgba(0,0,0,0.18);
+    overflow: hidden;    
+}
+
+.oben
+{
+    background-image: url(https://kiper-immobilien.de/wp-content/uploads/2017/08/1.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 16px;
+    color: white;
+    position: relative;
+    z-index: 0;
+    cursor: pointer;
+}
+
+.mittefoto
+{
+    background-image: url(https://kiper-immobilien.de/wp-content/uploads/2017/08/1-1.jpg);
+}
+
+.letztefoto
+{
+    background-image: url(https://kiper-immobilien.de/wp-content/uploads/2017/08/1-2.jpg);
+}
+
+.verkauft
+{
+    align-self: flex-end;
+    font-size: 12px;
+    background-color: rgba(0, 0, 0, 0.295);
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+.preis
+{
+    line-height: 15px;
+}
+
+.preis span
+{
+    font-size: 12px;
+}
+
+/* Zwei overlays, weil gradient transition nicht geht */
+
+.overlay, .overlayBlau
+{
+    background: linear-gradient(0deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0) 100%);
+    height: 40%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    transition: opacity 0.4s;
+}
+
+.overlayBlau
+{
+    background: linear-gradient(0deg, rgba(0, 54, 170, 0.7) 0%, rgba(0,0,0,0) 100%);
+    opacity: 0;
+}
+
+.oben:hover .overlay
+{
+    opacity: 0;
+}
+.oben:hover .overlayBlau
+{
+    opacity: 1;
+}
+
+.oben i
+{
+    position: absolute;
+    background-color: rgb(9 87 217 / 86%);
+    width: var(--groesse);
+    height: var(--groesse);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    font-size: calc(var(--groesse) / 2);
+    opacity: 0;
+    transition: opacity 0.4s, left 0.4s, right 0.4s;
+}
+
+.card .oben .links
+{
+    left: 10px;
+    top: calc(50% - (var(--groesse) / 2));
+}
+
+.card .oben .rechts
+{
+    right: 10px;
+    top: calc(50% - (var(--groesse) / 2));
+}
+
+.oben:hover i
+{
+    opacity: 1;
+}
+
+.oben:hover .links
+{
+    left: 15px;
+}
+
+.oben:hover .rechts
+{
+    right: 15px;
+}
+
+
+/*--------------------CARD UNTEN------------------------*/ 
+
+
+.card .unten
+{
+    padding: 16px;
+}
+
+.card .unten h3
+{
+    margin: 0;
+}
+.adresse
+{
+    margin-top: 5px;
+    font-size: 12px;
+    color: #565656;
+}
+.datum
+{
+    font-size: 12px;
+    margin-top: 25px;
+    text-align: right;
+    color: #565656;
+}
+
+
+/*---------------------------FOOTER--------------------------------*/
+
+
+footer
+{
+    padding: 70px 0 0 0;
+    background-color: #f7f7f7;
+    box-shadow: inset 0 20px 50px -20px rgb(0 0 0 / 6%);   
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 100%;
+}
+
+.column
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.row
+{    
+    display: flex;
+    justify-content: space-between;
+}
+
+.column6
+{
+    width: 50%;
+    padding-right: 25px;
+}
+
+.column3
+{
+    width: 25%;
+    padding-right: 25px;
+}
+
+.column3 h4
+{
+    font-size: 21px;
+    margin: 10px 0 25px 0;
+    color: #707070;
+    font-weight: 400;
+}
+
+.column3 i
+{
+    color: #707070;   
+}
+
+.column3 a
+{
+    text-decoration: none;
+    color: #707070;
+    line-height: 21px;
+    margin-left: 10px;
+}
+
+.column3 a:hover
+{
+    padding-left: 10px;
+}
+.row2
+{
+    width: 100%;
+}
+
+.row2 .copyright
+{
+    color: #707070;
+    border-top: 1px solid rgba(0,0,0,0.09);
+    margin-top: 60px;
+    text-align: center;
+    padding: 40px 0;
+}
